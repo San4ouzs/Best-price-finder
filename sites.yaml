@@ -1,0 +1,31 @@
+
+sites:
+  - domain: "store.google.com"
+    country: "EU"
+    currency: "EUR"
+    price_selectors:
+      - '[itemprop="price"]'
+      - 'meta[itemprop="price"]::attr(content)'
+  - domain: "www.bhphotovideo.com"
+    country: "US"
+    currency: "USD"
+    price_selectors:
+      - ".price__value"
+  - domain: "www.argos.co.uk"
+    country: "UK"
+    currency: "GBP"
+    price_selectors:
+      - "[data-test='product-price']"
+      - ".ProductPrice_price__amount"
+  - domain: "www.mediamarkt.de"
+    country: "DE"
+    currency: "EUR"
+    price_selectors:
+      - "[data-test='mms-product-details-price']"
+      - ".price"
+  - domain: "www.newegg.com"
+    country: "US"
+    currency: "USD"
+    price_selectors:
+      - ".price-current strong"
+      - "li.price-current strong"
